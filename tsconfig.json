@@ -24,13 +24,9 @@
       "node"
     ]
   },
-  "files": [
-    "gulpfile.ts"
-  ],
   "exclude": [
     "node_modules",
-    "dist",
-    "src"
+    "dist"
   ],
   "compileOnSave": false
 }

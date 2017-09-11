@@ -1,13 +1,22 @@
+import { get, param, getControllerSpec } from "@loopback/core";
+// import { Repository } from "@loopback/core";
 
 class ProjectsController {
   constructor() {
-    // this.messages = new Repository('messages');
+    // this.projects = new Repository('projects');
   }
 
   @get('/projects')
   @param.query.number('page')
-  // list(limit = 10) {
-  //   if (limit > 100) limit = 100; // your logic
-  //   return this.messages.find({limit});
-  // }
+  list(page = 0, pageSize = 30) {
+
+  }
+
+  @get('/projects/{id}')
+  @param.query.number('page')
+  @param.query.number('pageSize')
+  get(id: number) {
+
+  }
+
 }
